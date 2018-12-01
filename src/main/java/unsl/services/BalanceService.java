@@ -27,7 +27,8 @@ public class BalanceService {
         Balance balance =  balanceRepository.findByUserId(userId);
 
         if (balance == null) {
-            return new ResponseEntity(new ResponseError(404, "Balance not found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new ResponseError(404, String.format("Balance for userId %d not found",
+                    userId)), HttpStatus.NOT_FOUND);
         }
 
         return balance;
@@ -56,7 +57,8 @@ public class BalanceService {
         Balance balance = balanceRepository.findById(balanceId).orElse(null);
 
         if (balance == null) {
-            return new ResponseEntity(new ResponseError(404, "Balance not found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new ResponseError(404, String.format("Balance %d not found",
+                    balanceId)), HttpStatus.NOT_FOUND);
         }
 
         return balance;
@@ -72,7 +74,8 @@ public class BalanceService {
         Balance balance = balanceRepository.findById(balanceId).orElse(null);
 
         if (balance == null) {
-            return new ResponseEntity(new ResponseError(404, "Balance not found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new ResponseError(404, String.format("Balance %d not found",
+                    balanceId)), HttpStatus.NOT_FOUND);
         }
 
         balance.setAmount(newBalance.getAmount());

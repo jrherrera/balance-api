@@ -33,7 +33,7 @@ public class BalanceController {
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public Object createBalance(@RequestBody Balance balance) throws Exception {
-
+        /*TODO: si el balance ya existe no dejo crear otro*/
         return balanceService.saveBalance(balance);
     }
 
