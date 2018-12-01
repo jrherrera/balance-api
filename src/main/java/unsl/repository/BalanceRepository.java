@@ -6,5 +6,9 @@ import unsl.entities.Balance;
 
 public interface BalanceRepository extends CrudRepository<Balance, Long> {
 
+	/**
+	 * @param userId
+	 * @return
+	 */
 	Balance findByUserId(@Param("userId") Long userId);
 }

@@ -1,6 +1,8 @@
 unsl/Application.class
-unsl/repository/BalanceRepository.class
-unsl/services/BalanceService.class
-unsl/utils/Responses.class
-unsl/controllers/BalanceController.class
 unsl/entities/Balance.class
+unsl/repository/BalanceRepository.class
+unsl/utils/RestService.class
+unsl/entities/User.class
+unsl/services/BalanceService.class
+unsl/controllers/BalanceController.class
+unsl/entities/ResponseError.class

@@ -1,6 +1,8 @@
 /Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/services/BalanceService.java
 /Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/controllers/BalanceController.java
 /Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/entities/Balance.java
+/Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/entities/User.java
+/Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/utils/RestService.java
 /Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/repository/BalanceRepository.java
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/utils/Responses.java
 /Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/Application.java
+/Users/jherrera/Dev/Projects/Java/CharlaUNSL/balance-api/src/main/java/unsl/entities/ResponseError.java
