@@ -13,6 +13,8 @@ import java.io.IOException;
 public class ResquestResponseFilter implements Filter {
 
     int failRatio=5;
+    int minResponseTime=100;
+    int maxResponseTime=1000;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -21,7 +23,7 @@ public class ResquestResponseFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
-        long responseTime=Math.round(Math.random()*100);
+        long responseTime=Math.round(Math.random()*(maxResponseTime-minResponseTime)+minResponseTime);
         long fail=Math.round(Math.random()*100);
 
         try {

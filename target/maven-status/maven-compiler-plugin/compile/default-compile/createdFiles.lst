@@ -1,3 +1,4 @@
+unsl/filters/ResquestResponseFilter.class
 unsl/Application.class
 unsl/entities/Balance.class
 unsl/repository/BalanceRepository.class
