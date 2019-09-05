@@ -3,9 +3,8 @@ package unsl.utils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
-import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
-import unsl.entities.User;
+import unsl.entities.Ping;
 
 @Service
 public class RestService {
@@ -15,19 +14,19 @@ public class RestService {
      * @return
      * @throws Exception
      */
-    public User getUser(String url) throws Exception {
+    public Ping getPing(String url) throws Exception {
         RestTemplate restTemplate = new RestTemplate();
 
-        User user;
+        Ping ping;
 
         try {
-            user = restTemplate.getForObject(url, User.class);
+            ping = restTemplate.getForObject(url, Ping.class);
         }  catch (Exception e){
             throw new Exception(buildMessageError(e));
 
         }
 
-        return user;
+        return ping;
     }
 
     private String buildMessageError(Exception e) {
